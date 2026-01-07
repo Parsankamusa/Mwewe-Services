@@ -1,6 +1,6 @@
 from datetime import datetime, date, timedelta
 from dateutil.relativedelta import relativedelta
-from  automations.models import FrequencySettings
+from models.location import FrequencySettings
 from datetime import datetime, date
 from typing import Optional, Union
 
