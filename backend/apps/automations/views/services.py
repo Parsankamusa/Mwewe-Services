@@ -1,7 +1,6 @@
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required, permission_required
-from models.services import Services, DashboardItems
-from models.common import DashboardItems
+from models import Services, DashboardItems
 
 
 @login_required

@@ -2,8 +2,7 @@ from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required, permission_required
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
-from models.notifications import Notification
-from models.common import DashboardItems
+from models import Notification, DashboardItems
 from admindash.services.notifications.email import EmailService
 from admindash.services.notifications.sms import SMSService
 from django.core.paginator import Paginator
