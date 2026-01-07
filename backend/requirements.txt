@@ -1,0 +1,10 @@
+apscheduler
+django
+pandas
+django-browser-reload
+africastalking
+python-dotenv
+openpyxl
+pymysql
+django-cors-headers
+cryptography
