@@ -12,7 +12,7 @@ class SharedLocations(models.Model):
 
     class Meta:
         verbose_name_plural = "Shared Locations"
-        db_name = "shared_locations"
+        db_table = "shared_locations"
 
 class SubRegion(models.Model):
     region = models.CharField(max_length=200)

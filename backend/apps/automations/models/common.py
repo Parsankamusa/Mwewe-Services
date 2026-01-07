@@ -40,6 +40,7 @@ class DashboardItems(models.Model):
 
 
 
+
 class RecentActivity(models.Model):
     initiator_name = models.CharField(null=True, default="", max_length=200)
     action = models.CharField(max_length=200)
