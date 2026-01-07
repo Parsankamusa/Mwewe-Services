@@ -3,7 +3,7 @@ from collections import defaultdict
 import random
 from django.db import transaction
 
-from automations.models import (
+from models import (
     Clients, User, Task, Workload, SubRegion,
     SharedLocations, StaffAssignmentResult
 )

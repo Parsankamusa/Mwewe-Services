@@ -1,7 +1,7 @@
 import requests
 from smtplib import SMTP_SSL as SMTP
 from email.mime.text import MIMEText
-from  automations.models.notifications import NotificationTemplate
+from models import NotificationTemplate
 
 
 

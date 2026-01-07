@@ -1,5 +1,5 @@
 from typing import Dict, Any
-from automations.models.clients import Clients
+from models import Clients
 
 
 class ClientSerializer:
