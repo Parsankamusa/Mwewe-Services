@@ -6,6 +6,11 @@ from django.db.models import Count, Sum, Max, Min, Avg
 from collections import defaultdict
 from datetime import datetime
 from django.contrib.auth.decorators import login_required, permission_required
+from models.clients import Clients
+from models.tasks import Task
+from models.users import User
+from models.schedule import WeeklySchedule
+from models.common import DashboardItems, RecentActivity
 
 
 @login_required
