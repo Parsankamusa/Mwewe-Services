@@ -2,7 +2,9 @@ from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required, permission_required
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
-from admindash.models import Vehicles, Branches, DashboardItems
+from models.vehicles import Vehicles
+from models.location import Branches
+from models.common import DashboardItems
 from admindash.services.data_loaders.file_processor import VehicleFileProcessor
 import json
 
