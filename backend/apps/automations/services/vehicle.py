@@ -1,10 +1,7 @@
 from datetime import datetime, timedelta
 from collections import defaultdict
 from django.db import transaction
-from models import Workload, VehicleRoute
-from automations.models.vehicles import Vehicles
-from automations.models.clients import Clients
-from automations.models.location import SubRegion
+from models import Workload, VehicleRoute, Vehicles, Clients, SubRegion
 
 
 class VehicleAssigner:

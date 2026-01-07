@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 from django.db import transaction
-from  automations.models import Task, Notification, Clients, User, Workload
-from ..utils.validators import validate_staff_availability, StaffValidationError
+from models import Task, Notification, Clients, User
+from utils.validators import validate_staff_availability, StaffValidationError
 from .notifications import send_mail, send_sms_staff, send_sms_client
 
 
