@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 from django.contrib.auth import get_user_model
-from admindash.utils.validators import is_valid_email, is_valid_phone
+from utils.validators import is_valid_email, is_valid_phone
 import json
 
 User = get_user_model()

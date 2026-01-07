@@ -7,8 +7,8 @@ from automations.models import (
     Clients, User, Task, Workload, SubRegion,
     SharedLocations, StaffAssignmentResult
 )
-from ..task_manager import send_staff_assignment_notification
-from ...utils.date_helpers import get_date_from_string_or_obj, calculate_next_due_date
+from services.task_managers import send_staff_assignment_notification
+from utils.date_helper import get_date_from_string_or_obj, calculate_next_due_date
 
 REGION_PRIORITY = ["Eastern", "Coast", "Western", "North Western", "Nairobi"]
 

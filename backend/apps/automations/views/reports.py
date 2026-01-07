@@ -1,11 +1,17 @@
 from django.http import JsonResponse, HttpResponse
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth import get_user_model
-from admindash.models import (
-    Clients, Task, WeeklySchedule, VehicleRoute,
-    Vehicles, Branches, DashboardItems
+from models.clients import (
+    Clients, VehicleRoute,
 )
-from admindash.utils.date_helpers import parse_date
+from models.tasks import Task
+from models.common import DashboardItems
+from models.location import Branches
+from models.schedule import WeeklySchedule
+from models.vehicles import Vehicles
+
+
+from utils.date_helper import parse_date
 from django.db.models import Count, Q, Avg
 from collections import defaultdict
 from datetime import datetime, timedelta

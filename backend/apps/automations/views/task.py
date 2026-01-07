@@ -3,11 +3,13 @@ from django.contrib.auth.decorators import login_required, permission_required
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 from django.contrib.auth import get_user_model
-from admindash.models import Task, Clients, DashboardItems, TODOReassignments
+from models.tasks import Task
+from models.clients import Clients
+from models.common import DashboardItems, TODOReassignments
 from admindash.services.notifications.email import EmailService
 from admindash.services.notifications.sms import SMSService
-from admindash.utils.validators import validate_required_fields
-from admindash.utils.date_helpers import parse_date
+from utils.validators import validate_required_fields
+from utils.date_helper import parse_date
 import json
 import threading
 

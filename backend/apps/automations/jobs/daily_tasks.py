@@ -1,8 +1,8 @@
 from django.db import transaction
-from admindash.services.autotask.assigner import AutoTaskAssigner
-from admindash.services.scheduling import routes
-from admindash.services.vehicles import vehicle_enroute
-from admindash.services.task_manager import (
+from services.auto_tasks.assigner import AutoTaskAssigner
+from services.schedule import routes
+from services.vehicle import vehicle_enroute
+from services.task_managers import (
     filter_task,
     supervisor_data,
     send_client_reminder,

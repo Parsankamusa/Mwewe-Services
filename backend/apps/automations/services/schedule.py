@@ -1,8 +1,8 @@
 from datetime import datetime, date
 from collections import defaultdict
 from django.db import transaction
-from automations.schedule.models import Task, Clients, WeeklySchedule
-from ..utils.date_helpers import get_date_from_string_or_obj
+from automations.models.schedule import Task, Clients, WeeklySchedule
+from utils.date_helper import get_date_from_string_or_obj
 
 
 @transaction.atomic
